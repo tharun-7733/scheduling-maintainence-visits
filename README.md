@@ -1,19 +1,23 @@
-## Running with Docker
+***Predictive Maintenance for Medical Equipment Using Machine Learning*** <br>
+This project aims to predict maintenance risk levels of medical devices by analyzing historical device usage data and textual maintenance reports. The system helps healthcare <br> facilities shift from reactive maintenance to proactive and predictive planning, reducing equipment downtime, improving reliability, and supporting better decision‑making. <br>
 
-This project can be built and run using Docker Compose. The provided Dockerfile uses Python 3.13-slim and installs dependencies in a virtual environment. The application exposes port 7860 (the default for Gradio apps).
+***Features*** <br>
+Predicts whether a device is High Risk or Low Risk for maintenance. <br>
 
-### Build and Run
+Utilizes machine learning models like Logistic Regression, Random Forest, and XGBoost. <br>
 
-```sh
-docker compose up --build
-```
+Processes both numerical data and text‑based technician notes. <br>
 
-This will build the image and start the service at [http://localhost:7860](http://localhost:7860).
+Provides a simple user interface for real‑time prediction. <br>
 
-### Details
-- **Python version:** 3.13-slim
-- **Exposed port:** 7860
-- **No environment variables or volumes are required by default.**
-- **No .env file is required unless you uncomment the relevant line in `docker-compose.yml`.**
+Designed to support proactive maintenance planning. <br>
 
-All necessary model files (`*.pkl`) and the application code (`gr.py`) are included in the image. No additional configuration is needed.
+***Machine Learning Models Used*** <br>
+
+Logistic Regression <br>
+KNN <br>
+Random Forest Classifier <br>
+Kernel SVM <br>
+XGBoost Classifier <br>
+Gradient Boost <br>
+Logistic Regression <br>
