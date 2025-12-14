@@ -1,23 +1,88 @@
-***Predictive Maintenance for Medical Equipment Using Machine Learning*** <br>
-This project aims to predict maintenance risk levels of medical devices by analyzing historical device usage data and textual maintenance reports. The system helps healthcare <br> facilities shift from reactive maintenance to proactive and predictive planning, reducing equipment downtime, improving reliability, and supporting better decision‑making. <br>
+.
 
-***Features*** <br>
-Predicts whether a device is High Risk or Low Risk for maintenance. <br>
+🏥 Predictive Maintenance for Medical Equipment
+Machine Learning • Real‑Time Failure Risk Prediction
+<p align="center"> <img src="https://cdn-icons-png.flaticon.com/512/2966/2966489.png" width="120"/> </p> <p align="center"> <img src="https://img.shields.io/badge/Project%20Type-Machine%20Learning-blue?style=for-the-badge"/> <img src="https://img.shields.io/badge/Domain-Healthcare%20Tech-green?style=for-the-badge"/> <img src="https://img.shields.io/badge/Status-Active-orange?style=for-the-badge"/> </p>
+🔍 Overview
+This project predicts the maintenance risk level of biomedical equipment by analyzing:
 
-Utilizes machine learning models like Logistic Regression, Random Forest, and XGBoost. <br>
+🧮 Numerical data (device age, downtime, cost, failure history)
 
-Processes both numerical data and text‑based technician notes. <br>
+📝 Text logs written by technicians
 
-Provides a simple user interface for real‑time prediction. <br>
+🤖 Machine Learning models such as Logistic Regression, Random Forest, XGBoost
 
-Designed to support proactive maintenance planning. <br>
+The goal is to shift hospitals from reactive → proactive → predictive maintenance.
 
-***Machine Learning Models Used*** <br>
+✨ Features
+Feature	Description
+⚙️ ML-based risk prediction	Predicts if a device is High or Low risk
+📝 NLP on maintenance logs	Extracts meaning from real technician notes
+📊 Interactive Dashboard	Real-time prediction interface with Gradio
+🚀 Scalable Pipeline	Works with any hospital dataset
+💾 Model + Scaler Saving	Ensures accurate prediction consistency
+🧠 Project Architecture
+<p align="center"> <img src="https://i.imgur.com/IQKQqc7.png" width="650"/> </p>
+(If you want, I can replace this with a custom PNG made from your flowchart.)
 
-Logistic Regression <br>
-KNN <br>
-Random Forest Classifier <br>
-Kernel SVM <br>
-XGBoost Classifier <br>
-Gradient Boost <br>
-Logistic Regression <br>
+📁 Folder Structure
+├── data/
+│   └── Medical_Device_Failure_dataset.csv
+├── models/
+│   ├── model.pkl
+│   ├── scaler.pkl
+│   └── feature_list.pkl
+├── src/
+│   ├── preprocessing.py
+│   ├── train_model.py
+│   ├── nlp_processing.py
+│   └── predict.py
+├── app/
+│   └── app.py
+└── README.md
+🚀 How to Run
+🔧 Install Requirements
+pip install -r requirements.txt
+🏋️ Train the Model
+python src/train_model.py
+🌐 Launch Web UI
+python app/app.py
+Your browser will open the prediction interface automatically ✔️
+
+📊 Model Performance
+<p align="center"> <img src="https://i.imgur.com/8Yf0hbh.gif" width="550"/> </p>
+Logistic Regression chosen as final model
+
+Best generalization & lowest overfitting
+
+Good performance on both structured + text features
+
+🧩 Workflow Diagram
+flowchart TD
+    A[Device Usage Data] --> C[Feature Engineering]
+    B[Maintenance Log Text] --> D[NLP Processing]
+    C --> E[Merge Features]
+    D --> E
+    E --> F[Train Models<br>LogReg | RF | XGBoost]
+    F --> G[Evaluate<br>AUC • F1 • Accuracy]
+    G --> H{Select Best Model}
+    H --> I[Save Model + Scaler + Features]
+    I --> J[Real-Time Prediction UI]
+🔮 Future Scope
+IoT sensor integration (real-time streaming)
+
+Deep learning for text understanding (BERT, RoBERTa)
+
+Cloud-based maintenance dashboard
+
+Remaining Useful Life (RUL) prediction
+
+Multi-hospital centralized management
+
+👨‍⚕️ Author
+Tharun Tej
+📧 Email or GitHub username (optional)
+
+⭐ Support the Project
+If this project helped you, please consider giving it a ⭐ on GitHub!
+
