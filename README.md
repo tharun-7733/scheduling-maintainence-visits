@@ -22,7 +22,7 @@ Feature	Description
 🚀 Scalable Pipeline	Works with any hospital dataset
 💾 Model + Scaler Saving	Ensures accurate prediction consistency
 🧠 Project Architecture
-<p align="center"> <img src="https://i.imgur.com/IQKQqc7.png" width="650"/> </p>
+
 (If you want, I can replace this with a custom PNG made from your flowchart.)
 
 📁 Folder Structure
@@ -50,7 +50,7 @@ python app/app.py
 Your browser will open the prediction interface automatically ✔️
 
 📊 Model Performance
-<p align="center"> <img src="https://i.imgur.com/8Yf0hbh.gif" width="550"/> </p>
+
 Logistic Regression chosen as final model
 
 Best generalization & lowest overfitting
