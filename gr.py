@@ -133,9 +133,6 @@ def predict_failure(age, maint_cost, downtime, maint_freq, failure_count, report
     </div>
     """
 
-# --------------------------
-# BUILD GRADIO UI
-# --------------------------
 with gr.Blocks() as demo:
     gr.Markdown("# 🔧 Medical Device Maintenance Prediction")
     
