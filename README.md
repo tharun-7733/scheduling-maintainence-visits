@@ -1,5 +1,3 @@
-.
-
 🏥 Predictive Maintenance for Medical Equipment
 Machine Learning • Real‑Time Failure Risk Prediction
 <p align="center"> <img src="https://cdn-icons-png.flaticon.com/512/2966/2966489.png" width="120"/> </p> <p align="center"> <img src="https://img.shields.io/badge/Project%20Type-Machine%20Learning-blue?style=for-the-badge"/> <img src="https://img.shields.io/badge/Domain-Healthcare%20Tech-green?style=for-the-badge"/> <img src="https://img.shields.io/badge/Status-Active-orange?style=for-the-badge"/> </p>
@@ -35,7 +33,6 @@ Feature	Description
 ├── src/
 │   ├── preprocessing.py
 │   ├── train_model.py
-│   ├── nlp_processing.py
 │   └── predict.py
 ├── app/
 │   └── app.py
@@ -78,11 +75,4 @@ Cloud-based maintenance dashboard
 Remaining Useful Life (RUL) prediction
 
 Multi-hospital centralized management
-
-👨‍⚕️ Author
-Tharun Tej
-📧 Email or GitHub username (optional)
-
-⭐ Support the Project
-If this project helped you, please consider giving it a ⭐ on GitHub!
 
