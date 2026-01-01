@@ -21,33 +21,16 @@ Feature	Description
 💾 Model + Scaler Saving	Ensures accurate prediction consistency
 🧠 Project Architecture
 
-(If you want, I can replace this with a custom PNG made from your flowchart.)
-
-📁 Folder Structure
-├── data/
-│   └── Medical_Device_Failure_dataset.csv
-├── models/
-│   ├── model.pkl
-│   ├── scaler.pkl
-│   └── feature_list.pkl
-├── src/
-│   ├── preprocessing.py
-│   ├── train_model.py
-│   └── predict.py
-├── app/
-│   └── app.py
-└── README.md
-🚀 How to Run
-🔧 Install Requirements
+How to Run
+Install Requirements
 pip install -r requirements.txt
-🏋️ Train the Model
+Train the Model
 python src/train_model.py
-🌐 Launch Web UI
+Launch Web UI
 python app/app.py
 Your browser will open the prediction interface automatically ✔️
 
 📊 Model Performance
-
 Logistic Regression chosen as final model
 
 Best generalization & lowest overfitting
